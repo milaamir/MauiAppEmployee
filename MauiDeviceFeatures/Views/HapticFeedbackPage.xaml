@@ -1,0 +1,11 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:MauiDeviceFeatures.ViewModels"
+             x:Class="MauiDeviceFeatures.Views.HapticFeedbackPage"
+             x:DataType="viewModels:HapticFeedbackPageViewModel"
+             Title="Haptic Feedback">
+    <VerticalStackLayout VerticalOptions="Start" Padding="10">
+        <Button Text="Click Mode" Command="{Binding ClickCommand}"/>
+        <Button Text="Long Press Mode" Command="{Binding LongPressCommand}" Margin="0,10,0,0"/>
+    </VerticalStackLayout>
+</ContentPage>
